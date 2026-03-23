@@ -13,6 +13,11 @@ public class DemoController {
         return "home";
     }
 
+    @RequestMapping("/test")
+    public String testSp() {
+    	return "helo";
+    }
+    
     @RequestMapping("/calculate")
     public String calculate(@RequestParam("number") int number, Model model) {
 
